@@ -31,6 +31,7 @@ const PostForm = () => {
           type="text"
           className="block w-full h-10 p-2 focus:border-purple-300 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
           name="title"
+          minLength={8}
           placeholder="Enter your post title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -38,6 +39,8 @@ const PostForm = () => {
         <textarea
           className="block w-full h-24 p-2 mt-2 focus:border-purple-300 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
           name="body"
+          minLength={8}
+          maxLength={500}
           placeholder="Enter your post body"
           value={body}
           onChange={(e) => setBody(e.target.value)}
