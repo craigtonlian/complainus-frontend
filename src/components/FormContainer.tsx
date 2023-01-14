@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 
 interface IFormContainer {
   children: React.ReactNode;
@@ -7,11 +6,11 @@ interface IFormContainer {
 
 const FormContainer = ({ children }: IFormContainer) => {
   return (
-    <Container className="py-3">
-      <Row className="justify-content-md-center">
-        <Col>{children}</Col>
-      </Row>
-    </Container>
+    <div className="py-12 font-nunito">
+      <div className="px-48 justify-content-md-center">
+        <div>{children}</div>
+      </div>
+    </div>
   );
 };
 

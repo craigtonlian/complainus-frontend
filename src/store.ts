@@ -1,19 +1,17 @@
-export {};
-// import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-// import postsReducer from "../features/posts/postSlice";
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import postsReducer from "./slices/postSlice";
 
-// export const store = configureStore({
-//   reducer: {
-//     // Define a top-level state field `posts`, handled by `postsReducer`
-//     posts: postsReducer,
-//   },
-// });
+export const store = configureStore({
+  reducer: {
+    posts: postsReducer,
+  },
+});
 
-// export type AppDispatch = typeof store.dispatch;
-// export type RootState = ReturnType<typeof store.getState>;
-// export type AppThunk<ReturnType = void> = ThunkAction<
-//   ReturnType,
-//   RootState,
-//   unknown,
-//   Action<string>
-// >;
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  RootState,
+  unknown,
+  Action<string>
+>;

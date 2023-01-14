@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import FormContainer from "../components/FormContainer";
 
@@ -31,32 +29,47 @@ const SignupScreen = () => {
 
   return (
     <FormContainer>
-      <h1> Sign Up </h1>
-      <Form onSubmit={submitHandler}>
-        <Form.Group className="my-3" controlId="email">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
+      <h1 className="font-bold text-5xl mb-12 text-center"> Sign Up </h1>
+      <form onSubmit={submitHandler}>
+        <div className="my-3" id="email">
+          <label
+            className="font-semibold text-xl text-gray-800"
+            htmlFor="email"
+          >
+            Email address
+          </label>
+          <input
+            className="block w-full h-10 p-2 focus:border-purple-300 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-        </Form.Group>
+        </div>
 
-        <Form.Group className="my-3" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
+        <div className="my-3" id="password">
+          <label
+            className="font-semibold text-xl text-gray-800"
+            htmlFor="password"
+          >
+            Password
+          </label>
+          <input
+            className="block w-full h-10 p-2 focus:border-purple-300 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
             type="password"
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </Form.Group>
+        </div>
 
-        <Button className="my-3" variant="primary" type="submit">
+        <button
+          className="mt-8 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+          type="submit"
+        >
           Submit
-        </Button>
-      </Form>
+        </button>
+      </form>
     </FormContainer>
   );
 };

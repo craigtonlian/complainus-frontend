@@ -1,4 +1,8 @@
-main {
-  margin-top: 3rem;
-  height: 75vh;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito-Sans";
+  src: url("./fonts/NunitoSans-Regular.ttf");
 }

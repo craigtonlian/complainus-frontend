@@ -1,14 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer>
-      <Container>
-        <Row>
-          <Col className="text-center py-3">Copyright &copy; CraigtonLian</Col>
-        </Row>
-      </Container>
+    <footer className="px-6 py-2 bg-white rounded-md flex items-center justify-center">
+      <div className="text-center py-2 font-semibold">
+        Copyright &copy; 2023 Craigton Lian
+      </div>
     </footer>
   );
 };

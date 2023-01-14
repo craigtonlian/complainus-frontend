@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Container } from "react-bootstrap";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SignupScreen from "./screens/SignupScreen";
+import PostList from "./components/PostList";
 
 function App() {
   const [userEmail, setUserEmail] = useState("");
@@ -26,19 +26,29 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
-        <Header userEmail={userEmail} setUserEmail={setUserEmail} />
-        <main>
-          <Container>
-            <Routes>
-              <Route path="/" element={<HomeScreen userEmail={userEmail} />} />
-              <Route path="/signup" element={<SignupScreen />} />
-              <Route path="/login" element={<LoginScreen />} />
-            </Routes>
-          </Container>
-        </main>
-        <Footer />
+        <div className="grid grid-cols-7 gap-4 min-h-screen justify-between">
+          <div className="h-full justify-center col-start-3 col-span-3 flex flex-col">
+            <header className="mt-1">
+              <Header userEmail={userEmail} setUserEmail={setUserEmail} />
+            </header>
+            <div className="bg-gradient-to-b from-indigo-100 to-transparent my-1 rounded-md flex-auto">
+              <Routes>
+                <Route
+                  path="/"
+                  element={<HomeScreen userEmail={userEmail} />}
+                />
+                <Route path="/signup" element={<SignupScreen />} />
+                <Route path="/login" element={<LoginScreen />} />
+                <Route path="/posts" element={<PostList />} />
+              </Routes>
+            </div>
+            <footer className="mb-1">
+              <Footer />
+            </footer>
+          </div>
+        </div>
       </BrowserRouter>
     </div>
   );
