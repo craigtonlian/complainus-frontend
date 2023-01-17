@@ -72,3 +72,11 @@ rake db:seed
    },
  }
 ```
+
+7. Before you test it with the frontend React app, go to src/api/apiURL.tsx to change API_URL to http://localhost:3000, as shown below:
+
+```bash
+// export const API_URL = "https://complainus-backend.herokuapp.com";
+export const API_URL = "http://localhost:3000";
+
+```
