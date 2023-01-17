@@ -13,6 +13,7 @@ function App() {
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
+    document.title = "ComplaiNUS";
     (async () => {
       const response = await fetch(`${API_URL}/current_user`, {
         headers: {
