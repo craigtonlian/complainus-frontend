@@ -7,13 +7,14 @@ import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SignupScreen from "./screens/SignupScreen";
 import PostList from "./components/PostList";
+import { API_URL } from "./api/apiURL";
 
 function App() {
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("http://localhost:3000/current_user", {
+      const response = await fetch(`${API_URL}/current_user`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: localStorage.getItem("token")!,

@@ -54,7 +54,7 @@ const PostList = () => {
               return (
                 <div
                   key={post.id}
-                  className="rounded-md bg-gradient-to-r from-indigo-200 via-transparent to-pink-100 my-2 px-4 "
+                  className="rounded-md bg-gradient-to-r from-indigo-200 via-transparent to-pink-50 my-2 px-4 "
                 >
                   <Post
                     dispatch={dispatch}

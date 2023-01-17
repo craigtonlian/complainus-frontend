@@ -46,7 +46,7 @@ const PostForm = () => {
           onChange={(e) => setBody(e.target.value)}
         />
         <button
-          className="my-2 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+          className="mt-3 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-500 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
           type="submit"
         >
           Post

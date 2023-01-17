@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../api/apiURL";
 import FormContainer from "../components/FormContainer";
 
 const SignupScreen = () => {
@@ -11,7 +12,7 @@ const SignupScreen = () => {
   const submitHandler = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    await fetch("http://localhost:3000/users", {
+    await fetch(`${API_URL}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +65,7 @@ const SignupScreen = () => {
         </div>
 
         <button
-          className="mt-8 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+          className="mt-8 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:bg-purple-500"
           type="submit"
         >
           Submit

@@ -1,7 +1,8 @@
 import { PostDeleteData, PostFormData, PostsState } from "../slices/postSlice";
+import { API_URL } from "./apiURL";
 
-const API_URL = "http://localhost:3000";
-// "https://young-reef-43494.herokuapp.com";
+// const API_URL = "http://localhost:3000";
+// const API_URL = "https://thawing-spire-36928.herokuapp.com";
 
 export const fetchPosts = async () => {
   return fetch(`${API_URL}/posts`, {

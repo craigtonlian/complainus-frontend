@@ -66,7 +66,7 @@ const Post = (props: any) => {
         {isEditing ? (
           <div className="basis-full  text-md font-nunito">{editableTitle}</div>
         ) : (
-          <div className="my-1 basis-4/5 font-semibold text-md font-nunito">
+          <div className="my-1 basis-3/5 font-semibold text-md font-nunito">
             {titleElement}
           </div>
         )}
@@ -74,7 +74,7 @@ const Post = (props: any) => {
         {isEditing ? (
           ""
         ) : (
-          <div className="justify-content-right my-1 basis-1/5">
+          <div className="border-2 border-transparent  my-1 basis-2/5">
             <EditDeleteButtons
               post_id={props.post.id}
               dispatch={props.dispatch}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormContainer from "../components/FormContainer";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../api/apiURL";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ const LoginScreen = () => {
 
   const submitHandler = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    await fetch("http://localhost:3000/users/sign_in", {
+    await fetch(`${API_URL}/users/sign_in`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +40,7 @@ const LoginScreen = () => {
 
   return (
     <FormContainer>
-      <h1 className="font-bold text-5xl mb-12 text-center"> LOGIN </h1>
+      <h1 className="font-bold text-5xl mb-12 text-center"> Login </h1>
       <form onSubmit={submitHandler}>
         <div className="my-3" id="email">
           <label
@@ -73,7 +74,7 @@ const LoginScreen = () => {
         </div>
 
         <button
-          className="mt-8 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+          className="mt-8 w-full p-2 tracking-wide text-white text-lg transition-colors duration-200 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:bg-purple-500"
           type="submit"
         >
           Submit
