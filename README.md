@@ -19,4 +19,4 @@ npm run start
 
 6. Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 7. You should see a page like this.
-   ![Basic Page](public/images/basic-page.png)
+   ![Basic Page](public/basic-page.png)
