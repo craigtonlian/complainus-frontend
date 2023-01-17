@@ -1,7 +1,7 @@
 # ComplaiNUS React App
-This is the frontend repo of a CVWO project undertaken by Craigton in AY22/23 Winter.
+This is the frontend repo of a Computing for Voluntary Welfare Organizations (CVWO) project undertaken by Craigton in AY22/23 Winter.
 
-It consists of two separate repositories for the [frontend](https://github.com/craigtonlian/complainus-frontend) and [backend](https://github.com/craigtonlian/complainus-backend).
+The CVWO project consists of two separate repositories for the [frontend](https://github.com/craigtonlian/complainus-frontend) and [backend](https://github.com/craigtonlian/complainus-backend).
 
 This React App is deployed on [https://complainus.netlify.app](https://complainus.netlify.app).
 
