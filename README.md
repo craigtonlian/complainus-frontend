@@ -39,7 +39,7 @@ bundle install
 rails s
 ```
 
-4. We have to create, migrate the database by entering this command:
+4. We have to create and migrate the database by entering this command:
 
 ```bash
 rake db:create db:migrate
@@ -51,7 +51,7 @@ rake db:create db:migrate
 rake db:seed
 ```
 
-6. Your Rails API is set up locally. You can test the app by creating a new user account, or by logging in using pre-seeded users such as 
+6. Your Rails API is now set up locally. You can test the app by creating a new user account, or by logging in using pre-seeded users such as 
 
 ```bash
 {
