@@ -24,3 +24,51 @@ npm run start
 6. Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 7. You should see a page like this.
    ![Basic Page](public/basic-page.png)
+   
+## Running the backend Rails API locally
+1. Fork and clone the backend Rails API onto your local machine.
+2. Install any dependencies by running:
+
+```bash
+bundle install
+```
+
+3. Start the rails server on [http://localhost:3000](http://localhost:3000) in by entering this command:
+
+```bash
+rails s
+```
+
+4. We have to create, migrate the database by entering this command:
+
+```bash
+rake db:create db:migrate
+```
+
+5. Now we will seed the database by entering this command:
+
+```bash
+rake db:seed
+```
+
+6. Your Rails API is set up locally. You can test the app by creating a new user account, or by logging in using pre-seeded users such as 
+
+```bash
+{
+   {
+      email: user1@user.com,
+      password: password1
+   },
+   {
+      email: user2@user.com,
+      password: password2
+   },
+   
+   ...
+   
+   {
+      email: user30@user.com,
+      password: password30
+   },
+ }
+```
