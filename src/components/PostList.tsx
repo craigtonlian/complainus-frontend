@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../hooks";
 import { AppDispatch } from "../store";
@@ -71,12 +71,7 @@ const PostList = () => {
     );
   }
 
-  return (
-    <div>
-      {/* <h1> Posts </h1> */}
-      {contents}
-    </div>
-  );
+  return <div>{contents}</div>;
 };
 
 export default PostList;
