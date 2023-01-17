@@ -1,5 +1,8 @@
 # ComplaiNUS React App
 This is a CVWO project undertaken by Craigton in AY22/23 Winter.
+It consists of two separate repositories for the [frontend](https://github.com/craigtonlian/complainus-frontend) and [backend](https://github.com/craigtonlian/complainus-backend).
+
+This React App is deployed on [https://complainus.netlify.app](https://complainus.netlify.app).
 
 ## Getting Started
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) this repo.
