@@ -1,4 +1,7 @@
 # ComplaiNUS (Create React App)
+Name: Craigton Lian Ee John
+Matriculation No.: A0258986B
+
 This is the frontend repo of a Computing for Voluntary Welfare Organizations (CVWO) project undertaken by Craigton in AY22/23 Winter.
 
 The CVWO project consists of two separate repositories for the [frontend](https://github.com/craigtonlian/complainus-frontend) and [backend](https://github.com/craigtonlian/complainus-backend).
