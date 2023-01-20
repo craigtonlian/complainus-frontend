@@ -32,7 +32,7 @@ npm run start
    
 ## Running the backend Rails API locally
 1. Fork and clone the backend Rails API onto your local machine.
-2. Install any dependencies by running:
+2. Install dependencies by running:
 
 ```bash
 bundle install
